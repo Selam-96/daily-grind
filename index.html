@@ -134,6 +134,19 @@
 
 	  switch (today){
 
+
+		case 0:
+				coffee = {
+		    		name: "Mocha",
+		    		pic: "images/mocha.jpg",
+		    		alt: "Mocha Coffee",
+		  			color: "blue",
+		  			day: "Sunday",
+		  			desc: `Mocha Day!`
+		  		};
+
+			break;
+
         case 1:
 				coffee = {
 		    		name: "Bubble Tea",
@@ -214,18 +227,6 @@
 
 			break;
 
-
-			case 7:
-				coffee = {
-		    		name: "Mocha",
-		    		pic: "images/mocha.jpg",
-		    		alt: "Mocha Coffee",
-		  			color: "blue",
-		  			day: "Sunday",
-		  			desc: `Mocha Day!`
-		  		};
-
-			break;
 	  }
 
       document.getElementById('mydiv').innerHTML = coffeeTemplate(coffee);
